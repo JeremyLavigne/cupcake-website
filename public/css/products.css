@@ -1,0 +1,97 @@
+/* ===================== Products page dedicated css file ========================== */
+
+#main-section {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    margin: auto;
+    font-size: 1.4em;
+}
+#menu ul {
+    display: flex;
+    padding-left: 0;
+}
+#menu li {
+    list-style: none;
+    margin-right: 30px;
+}
+#menu a, a:hover, a:visited {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+#cupcakes-section, #wedding-section {
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.products-section {
+    display: flex;
+}
+
+.product-article {
+    margin: 30px;
+}
+
+.product-article img {
+    max-width: 300px;
+}
+
+.info-title {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.info-price {
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+/* =================================== Responsive part ======================================== */
+
+
+/* ------------- Tiny devices -------------------- */
+@media (max-width: 350px) { 
+    .product-article img {
+        max-width: 200px;
+    }
+}
+
+/* ------------- Small devices -------------------- */
+@media (max-width: 768px) { 
+    .products-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #menu {
+        font-size: 1.1em;
+    }
+}
+
+
+/* ------------- Big devices -------------------- */
+@media (min-width: 1365px) { 
+    .product-article img {
+        max-width: 400px;
+    }
+}
+
+/* ------------- Huges devices -------------------- */
+@media (min-width: 1650px) { 
+    .product-article img {
+        max-width: 500px;
+    }
+}

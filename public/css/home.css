@@ -1,0 +1,76 @@
+/* ===================== Home page dedicated css file ========================== */
+
+#main-section {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+#home-figure {
+    width: 40%;
+    margin: 0; 
+    padding: 0;
+}
+
+#home-figure img{
+    width: 100%;
+    min-height: 85vh;
+    max-height: 100vh;
+}
+
+#home-welcome {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    font-family: 'Dancing Script', cursive, sans-serif;
+    font-size: 1.6em;
+}
+
+#home-welcome img{
+    width: 300px;
+}
+
+
+/* =================================== Responsive part ======================================== */
+
+
+/* ------------- Tiny devices -------------------- */
+@media (max-width: 350px) { 
+}
+
+/* ------------- Small devices -------------------- */
+@media (max-width: 768px) { 
+    #home-figure {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    #home-welcome {
+        width: 80%;
+        font-size: 1.1em;
+        min-height: 85vh;
+    }
+
+    #home-welcome p {
+        background-color: white;
+        padding: 20px;
+        border-radius: 25%;
+        border: 5px solid black;
+    }
+
+    #home-welcome img{
+        display: none;
+    }
+}
+
+
+/* ------------- Big devices -------------------- */
+@media (min-width: 1365px) { 
+}
+
+/* ------------- Huges devices -------------------- */
+@media (min-width: 1650px) { 
+}

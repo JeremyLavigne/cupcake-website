@@ -1,0 +1,58 @@
+/* =================================== Responsive part ======================================== */
+
+
+/* ------------- Tiny devices -------------------- */
+@media (max-width: 350px) { 
+    body {
+        font-size: 0.8em;
+    }
+}
+
+/* ------------- Small devices -------------------- */
+@media (max-width: 768px) { 
+
+    /* Header */
+    #main-header {
+        min-height: 100px;
+        flex-direction: column;
+        padding-top: 10px;
+    }     
+    #main-header ul {
+        font-size: 1em;
+        padding-left: 0;
+    }
+    #main-header li {
+        margin: 0px 10px 0px 0px;
+    }
+
+    /* Section */
+    #main-section{
+        margin-top: 10px;
+    }
+}
+
+
+/* ------------- Big devices -------------------- */
+@media (min-width: 1365px) { 
+    body {
+        font-size: 1.4em;
+    }
+    #main-header img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* ------------- Huges devices -------------------- */
+@media (min-width: 1650px) { 
+    body {
+        font-size: 1.5em;
+    }
+    #main-header img {
+        width: 90px;
+        height: 90px;
+    }
+    #main-header {
+        min-height: 130px;
+    }  
+}

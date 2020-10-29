@@ -1,0 +1,98 @@
+/* ===================== About page dedicated css file ========================== */
+
+#main-section {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+form p {
+    font-size: 1.1em;
+}
+form li {
+    list-style: circle;
+}
+
+form {
+    width: 45%;
+    align-self: center;
+    border-right: 2px dotted black;
+    padding-right: 10px;
+}
+#sendButton {
+    margin-top: 50px;
+    color: white;
+    width: 120px;
+    height: 40px;
+    font-size: 1.7em;
+    background-color: #25ab95;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    font-size: 0.9em;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#delivery-infos {
+    width: 45%;
+    text-align: left;
+    align-self: center;
+    font-size: 1.2em;
+}
+.infos-title, .delivery-date {
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 1.1em;
+}
+.additional-info {
+    color:#5d5dff;
+}
+
+
+/* =================================== Responsive part ======================================== */
+
+
+/* ------------- Tiny devices -------------------- */
+@media (max-width: 350px) { 
+
+}
+
+/* ------------- Small devices -------------------- */
+@media (max-width: 768px) {
+    #main-section {
+        flex-direction: column-reverse;
+    }
+    form, #delivery-infos {
+        width: 90%;
+    }
+    form {
+        border-top: 2px dotted black;
+        border-right: none;
+        padding-right: 0px;
+        padding-top: 10px;
+    }
+    #sendButton {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* ------------- Big devices -------------------- */
+@media (min-width: 1365px) { 
+    #sendButton {
+        height: 50px;
+    }
+}
+
+/* ------------- Huges devices -------------------- */
+@media (min-width: 1650px) { 
+    #main-section {
+        width: 70%;
+    }
+}

@@ -1,0 +1,88 @@
+/* ===================== About page dedicated css file ========================== */
+
+#main-section {
+    font-family: 'Zilla Slab', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#owner-img {
+    max-height: 200px;
+    margin-right: 50px;
+    border: 8px groove white;
+}
+
+#main-section p {
+    width : 40%;
+}
+
+.cup {
+    max-width: 60px;
+    position: absolute;
+}
+.top-left {
+    top: 90px;
+    left: 10px;
+    transform: rotate(135deg);
+}
+.top-right {
+    top: 90px;
+    right: 10px;
+    transform: rotate(225deg);
+}
+
+
+/* =================================== Responsive part ======================================== */
+
+
+/* ------------- Tiny devices -------------------- */
+@media (max-width: 350px) { 
+    #owner-img {
+        max-height: 150px;
+        margin-right: 10px;
+        border: 5px groove white;
+    }
+}
+
+/* ------------- Small devices -------------------- */
+@media (max-width: 768px) {
+    #owner-img {
+        margin-right: 20px;
+    } 
+    .cup {
+        max-width: 40px;
+    }
+    .top-left {
+        top: 120px;
+    }
+    .top-right {
+        top: 120px;
+    }
+}
+
+/* ------------- Big devices -------------------- */
+@media (min-width: 1365px) { 
+    .cup {
+        max-width: 80px;
+    }
+    .top-left {
+        top: 110px;
+    }
+    .top-right {
+        top: 110px;
+    }
+}
+
+/* ------------- Huges devices -------------------- */
+@media (min-width: 1650px) { 
+    .cup {
+        max-width: 90px;
+    }
+    .top-left {
+        top: 140px;
+    }
+    .top-right {
+        top: 140px;
+    }
+}

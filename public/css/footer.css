@@ -1,0 +1,24 @@
+/* ======================== Main footer - Bottom info ================================== */
+
+#main-footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    font-size: 0.9em;
+    border-top: 1px solid var(--light-green);
+    color: var(--light-green);
+    background-color: white;
+}
+#main-footer ul {
+    display: flex;  
+    font-size: 1.5em;
+    padding-left: 0;
+}
+#main-footer li {
+    list-style-type: none;
+    margin: 0px 20px 0px 15px;
+    font-style: italic;
+}
+#main-footer a, a:visited, a:hover {
+    color: black;
+}

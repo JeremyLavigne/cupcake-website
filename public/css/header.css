@@ -1,0 +1,32 @@
+/* ======================== Main header - Top Banner ================================== */
+
+#main-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    min-height: 80px;
+    width: 100%;
+
+    background-color: var(--turquoise);
+}
+
+#main-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+    border: 2px solid black;
+}
+
+#main-header ul {
+    display: flex;  
+    font-size: 1.5em;
+}
+#main-header li {
+    list-style-type: none;
+    margin: 0px 20px 0px 15px;
+    font-style: italic;
+}
+#main-header a, a:visited, a:hover {
+    color: white;
+}
