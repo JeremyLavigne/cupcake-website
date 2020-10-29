@@ -11,6 +11,18 @@
 
     <!-- Dedicated css -->
     <link rel="stylesheet" href="./css/contact.css">
+
+    <!-- 
+        Use of EmailJs plateform to receive message via the contact form without using backend.
+        Not activate now.
+        
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("user_MyKey");
+        })();
+    </script>
+    -->
 </head>
 
 <body>
@@ -23,14 +35,14 @@
 
             <p>
                 You are most than welcome to send me a message :<br />
-                <ul>
-                    <li>Questions,</li>
-                    <li>Feedback,</li>
-                    <li>Anything you want to share !</li>
-                </ul>
+            <ul>
+                <li>Questions,</li>
+                <li>Feedback,</li>
+                <li>Anything you want to share !</li>
+            </ul>
             </p>
 
-            <textarea placeholder="Type your message here." id="informations" name="message" required></textarea>
+            <textarea placeholder="Type your message here." id="textarea-msg" name="message" required></textarea>
 
             <button id="sendButton" type="submit">Send</button>
 
@@ -38,30 +50,35 @@
 
         <aside id="delivery-infos">
             <p>
-                <span class="infos-title">Home delivery service:</span><br/><br/>
-                All the city of Stockholm and Malmö (additional cost).<br/>
+                <span class="infos-title">Home delivery service:</span><br /><br />
+                All the city of Stockholm and Malmö (additional cost).<br />
             </p>
             <p>
-                <span class="infos-title">Place to pick up order:</span><br/><br/>
+                <span class="infos-title">Place to pick up order:</span><br /><br />
                 Via la Costa Avenue. Blue Port gated neighbourhood. We will
-                send you the GPS Location via WhatsApp.<br/>
+                send you the GPS Location via WhatsApp.<br />
             </p>
             <p class="delivery-date">
                 Tuesday to Saturday - 9am to 2pm
-            </p><br/>
+            </p><br />
             <p class="additional-info">
                 **Orders must be placed 2 days before for greater security, processing and
                 availability.
             </p>
         </aside>
 
+        <p id="thank-you-msg">
+            Thank you for your interest ! <br/>
+            <span id="message-in-message">It didn't really send a mail, 
+                because I don't want to spam SDA webmail with... <br/>But it could !</span>
+        </p>
 
     </section>
 
     <footer id="main-footer"></footer>
 
     <script src='./js/main.js'></script>
-
+    <script src='./js/email.js'></script>
 </body>
 
 </html>
