@@ -24,6 +24,7 @@ formELt.addEventListener("submit", function(event) {
         buttonElt.style.display = "block";
         document.body.style.cursor = "default";
         textareaElt.value = "";
+        window.scroll(0,0);
     }, 4000);
     
 

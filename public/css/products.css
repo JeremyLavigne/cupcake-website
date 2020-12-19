@@ -4,7 +4,7 @@
     width: 90%;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 #menu {
@@ -60,6 +60,15 @@ h2 {
     font-size: 0.8em;
 }
 
+.up-arrow, .up-arrow:visited {
+    border-radius: 100%;
+    position: relative;
+    left: 50px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 /* =================================== Responsive part ======================================== */
 
 
@@ -78,6 +87,9 @@ h2 {
     }
     #menu {
         font-size: 1.1em;
+    }
+    .product-article {
+        margin-left: 15px;
     }
 }
 

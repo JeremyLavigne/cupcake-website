@@ -59,6 +59,12 @@
     .top-right {
         top: 120px;
     }
+    #main-section {
+        flex-direction: column;
+    }
+    #main-section p {
+        width : 90%;
+    }
 }
 
 /* ------------- Big devices -------------------- */
